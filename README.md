@@ -4,8 +4,12 @@
 
 百度接口总览[http://lbsyun.baidu.com/index.php?title=yingyan/api/v3/all](http://lbsyun.baidu.com/index.php?title=yingyan/api/v3/all)
 
-
 **注意**这个package只对接了`终端管理`、`轨迹上传`接口，其他围栏、轨迹纠偏等没有对接。
+
+
+github地址[https://github.com/aoxiang594/baidu-yingyan](https://github.com/aoxiang594/baidu-yingyan)
+
+
 
 #### 使用方法
 
