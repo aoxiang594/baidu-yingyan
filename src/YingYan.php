@@ -13,8 +13,11 @@ use GuzzleHttp\Client;
 class YingYan
 {
     protected $ak;
+
     protected $serviceId;
+
     protected $params;
+
     protected $response;
 
     protected $guzzleOptions = [];
@@ -149,7 +152,7 @@ class YingYan
      * @return mixed
      * @throws \Exception
      */
-    public function getLatestPoint($entityName,array $fields = [])
+    public function getLatestPoint($entityName, array $fields = [])
     {
         $url = 'http://yingyan.baidu.com/api/v3/track/getlatestpoint';
 
@@ -161,8 +164,6 @@ class YingYan
 
         return $this->get($url, $query)->getResponse();
     }
-
-
 
     /**
      * @param $url
