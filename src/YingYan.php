@@ -143,6 +143,27 @@ class YingYan
         return $this->post($url, $query)->getResponse();
     }
 
+    /**http://yingyan.baidu.com/api/v3/track/getlatestpoint
+     * @param $entityName
+     * @param $fields 其他自定义字段
+     * @return mixed
+     * @throws \Exception
+     */
+    public function getLatestPoint($entityName,array $fields = [])
+    {
+        $url = 'http://yingyan.baidu.com/api/v3/track/getlatestpoint';
+
+        $params = array_merge([
+            'entity_name' => $entityName,
+        ], array_filter($fields));
+
+        $query = $this->buildParams(array_filter($params));
+
+        return $this->get($url, $query)->getResponse();
+    }
+
+
+
     /**
      * @param $url
      * @param array $query
